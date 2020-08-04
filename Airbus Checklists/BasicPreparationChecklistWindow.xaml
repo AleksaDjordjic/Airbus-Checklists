@@ -1,0 +1,73 @@
+﻿<Window x:Class="Airbus_Checklists.BasicPreparationChecklistWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbus_Checklists"
+        mc:Ignorable="d"
+        Title="Basic Preparation Checklist" Height="413" Width="386" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" SizeToContent="Height">
+    <Grid>
+        <Label Content="Basic Preparation" HorizontalAlignment="Left" Margin="10,10,0,0" Width="360" FontFamily="Impact" FontSize="36" Height="50" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="ChecklistStatusBar" Margin="10,340,10,25"/>
+        <Label x:Name="ChecklistStatusTest" Content="Checklist Not Completed..." Margin="10,355,10,5"/>
+        <Rectangle Fill="White" Margin="10,65,10,50" Stroke="Black"/>
+        <Rectangle Fill="White" Height="30" Margin="10,65,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,95,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,125,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,155,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,185,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,215,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,245,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,275,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Margin="10,305,10,50" Stroke="Black"/>
+        <CheckBox x:Name="ChecklistItem1" Content="Batery Maste 1 + 2" Height="15" Margin="12,65,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem2" Content="External Power" Height="15" Margin="12,95,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem3" Content="Navigation Lights" Height="15" Margin="12,125,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem4" Content="Primary Flight Display" Height="15" Margin="12,155,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem5" Content="Navigation Display" Height="15" Margin="12,185,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem6" Content="ECAM Displays" Height="15" Margin="12,215,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem7" Content="Integrated Lights" Height="15" Margin="12,245,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem8" Content="MCDU 2" Height="15" Margin="12,275,10,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Label Content="(Start Fuel Loading)" Height="30" Margin="10,305,10,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock Height="30" Margin="280,65,12,0" TextWrapping="Wrap" Text="On" VerticalAlignment="Top" TextAlignment="Right" FontSize="22"/>
+        <TextBlock Height="30" Margin="280,95,12,0" TextWrapping="Wrap" Text="On" VerticalAlignment="Top" TextAlignment="Right" FontSize="22"/>
+        <TextBlock Height="30" Margin="280,125,12,0" TextWrapping="Wrap" Text="On" VerticalAlignment="Top" TextAlignment="Right" FontSize="22"/>
+        <TextBlock Height="30" Margin="280,155,12,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" FontSize="22" Text="Bright"/>
+        <TextBlock Height="30" Margin="280,185,12,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" FontSize="22" Text="Bright"/>
+        <TextBlock Height="30" Margin="280,215,12,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" FontSize="22" Text="Bright"/>
+        <TextBlock Height="30" Margin="240,245,12,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" FontSize="22" Text="(if req.) On"/>
+        <TextBlock Height="30" Margin="265,275,12,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" FontSize="22" Text="Enter Data"/>
+    </Grid>
+</Window>

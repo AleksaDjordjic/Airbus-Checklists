@@ -1,0 +1,128 @@
+﻿<Window x:Class="Airbus_Checklists.MCDUDataEntryChecklistWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbus_Checklists"
+        mc:Ignorable="d"
+        Title="MCDU Data Entry" Height="803" Width="555" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Label Content="MCDU Data Entry" HorizontalAlignment="Left" Margin="10,10,0,0" Width="529" FontFamily="Impact" FontSize="36" Height="50" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="ChecklistStatusBar" Margin="10,729,10,25"/>
+        <Label x:Name="ChecklistStatusTest" Content="Checklist Not Completed..." Margin="10,745,10,5"/>
+        <Rectangle Fill="White" Margin="10,65,10,50" Stroke="Black"/>
+        <Rectangle Fill="White" Height="30" Margin="10,65,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,95,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,125,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,155,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,185,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,215,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,245,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,275,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Margin="10,275,10,50" Stroke="Black"/>
+        <CheckBox x:Name="ChecklistItem1" Content="Enter Departure + Destination Airport" Height="15" Margin="13,95,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem2" Content="Align IRS" Height="15" Margin="13,125,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem3" Content="Enter Flight Number" Height="15" Margin="13,155,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem4" Content="Enter Cost Index" Height="15" Margin="13,185,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem5" Content="Enter Cruise Altitude" Height="15" Margin="13,215,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem6" Content="Select Departure Runway" Height="15" Margin="13,275,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Rectangle Fill="White" Height="30" Margin="10,305,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,335,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,365,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,395,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,425,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ChecklistItem7" Content="Select Departure Procedure" Height="15" Margin="13,305,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem8" Content="Enter Airways + Waypoints" Height="15" Margin="13,335,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem9" Content="Select Arrival Runway" Height="15" Margin="13,365,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem10" Content="Select Arrival Procedure" Height="15" Margin="13,395,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem11" Content="Check And Remove Discontinuities" Height="15" Margin="13,425,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBlock Margin="17,65,0,0" TextWrapping="Wrap" Text="INIT Page 1" VerticalAlignment="Top" Height="30" FontFamily="Impact" FontSize="24" FontWeight="Bold" TextDecorations="Underline" HorizontalAlignment="Left" Width="522"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,245,0,0" TextWrapping="Wrap" Text="F-PLN Page" VerticalAlignment="Top" Height="30" Width="522" FontFamily="Impact" FontSize="24" FontWeight="Bold" TextDecorations="Underline"/>
+        <Rectangle Fill="White" Height="30" Margin="10,455,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,485,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ChecklistItem12" Content="Check And Amend Speed/Altitude Constraints" Height="15" Margin="13,455,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Rectangle Fill="White" Height="30" Margin="10,515,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,545,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,575,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,605,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,635,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,665,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="White" Height="30" Margin="10,695,10,0" Stroke="Black" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,485,0,0" TextWrapping="Wrap" Text="RAD/NAV Page" VerticalAlignment="Top" Height="30" Width="522" FontFamily="Impact" FontSize="24" FontWeight="Bold" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,545,0,0" TextWrapping="Wrap" Text="INIT Page 2" VerticalAlignment="Top" Height="30" Width="522" FontFamily="Impact" FontSize="24" FontWeight="Bold" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,605,0,0" TextWrapping="Wrap" Text="PERF Page" VerticalAlignment="Top" Height="30" Width="522" FontFamily="Impact" FontSize="24" FontWeight="Bold" TextDecorations="Underline"/>
+        <CheckBox x:Name="ChecklistItem13" Content="Enter Radio Navigation Info (if needed)" Height="15" Margin="13,515,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem14" Content="Enter Block Fuel (Total Fuel)" Height="15" Margin="13,575,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem15" Content="Enter Takeoff Flaps Setting" Height="15" Margin="13,635,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem16" Content="Check V1, VR + V2 Speeds" Height="15" Margin="13,665,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="ChecklistItem17" Content="Check Transition Altitude" Height="15" Margin="13,695,0,0" VerticalAlignment="Top" FontSize="11" Click="ChecklistItem_Click" HorizontalAlignment="Left" Width="262">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+    </Grid>
+</Window>

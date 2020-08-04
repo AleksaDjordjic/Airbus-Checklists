@@ -1,0 +1,13 @@
+﻿<Window x:Class="Airbus_Checklists.Website"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbus_Checklists"
+        mc:Ignorable="d"
+        Title="Website" Height="600" Width="1050" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Website" Height="50" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="36" FontFamily="Impact"/>
+        <WebBrowser Margin="10,65,10,10" Source="https://aleksadjrodjic.github.io/SimpleGames-Website/"/>
+    </Grid>
+</Window>

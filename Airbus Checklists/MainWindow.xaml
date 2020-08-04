@@ -1,0 +1,23 @@
+﻿<Window x:Class="Airbus_Checklists.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbus_Checklists"
+        mc:Ignorable="d"
+        Title="Start" Height="450" Width="306" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Chose a Checklist" Height="25" Margin="10,50,10,0" VerticalAlignment="Top"/>
+        <Label Content="AIRBUS Checklists" Height="50" VerticalAlignment="Top" FontFamily="Impact" FontSize="36" Margin="10,10,10,0"/>
+        <Button x:Name="BasicPreparation" Content="Basic Preparations" Height="30" Margin="10,80,10,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="18" Click="BasicPreparation_Click"/>
+        <Label Content="Version : 0.2" Height="24" VerticalAlignment="Bottom" Margin="218,0,10,10"/>
+        <Button x:Name="CockpitPreparation" Content="Cockpit Preparation" Height="30" Margin="10,115,10,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="18" Click="CockpitPreparation_Click"/>
+        <Button x:Name="UpdateNotes" Content="Update Notes" Margin="110,387,87,10" Click="UpdateNotes_Click"/>
+        <Button x:Name="Customize" Content="Customize" Margin="10,387,195,10" Click="Customize_Click"/>
+        <Button x:Name="Website" Content="Website" HorizontalAlignment="Left" Height="24" Margin="10,358,0,0" VerticalAlignment="Top" Width="135" Click="Website_Click"/>
+        <Button x:Name="HowToUse" Content="How To Use (In Dev.)" HorizontalAlignment="Left" Height="24" Margin="155,358,0,0" VerticalAlignment="Top" Width="135"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,347,0,0" Stroke="Black" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="MCDUDataEntry" Content="MCDU Data Entry" Height="30" Margin="10,150,10,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="18" Click="MCDUDataEntry_Click"/>
+        <Button x:Name="CockpitPreparationPart2" Content="Cockpit Preparation Pt. 2" Height="30" Margin="10,185,10,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="18" Click="CockpitPreparationPart2_Click"/>
+    </Grid>
+</Window>
